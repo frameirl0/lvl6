@@ -1002,6 +1002,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     letter-spacing: 0.3px;
 }
 
+.fb-float-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 56px;
+    height: 56px;
+    background: #0099ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 153, 255, 0.45);
+    z-index: 9999;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.fb-float-btn:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 8px 28px rgba(0, 153, 255, 0.6);
+}
+
 
 /* ─── FOOTER ─────────────────────────────────── */
 footer {
@@ -1101,6 +1122,7 @@ footer {
     .hero-actions { flex-direction: column; align-items: center; }
     .nav-link span { display: none; }
 }
+
 
 
 
