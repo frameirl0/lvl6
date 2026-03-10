@@ -1087,6 +1087,37 @@ footer {
 }
 .footer-tag { font-weight: 500; color: var(--gray-200); }
 
+.footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-300);
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.social-btn:hover {
+    background: rgba(255,255,255,0.12);
+    color: var(--white);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.social-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
 
 /* ─── RESPONSIVE ──────────────────────────────── */
 @media (max-width: 1024px) {
@@ -1122,6 +1153,7 @@ footer {
     .hero-actions { flex-direction: column; align-items: center; }
     .nav-link span { display: none; }
 }
+
 
 
 
