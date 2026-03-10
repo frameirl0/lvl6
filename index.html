@@ -503,17 +503,33 @@
 </footer>
 
 
-<a href="https://m.me/LVL6FG" target="_blank" class="fb-float-btn" title="Message us on Facebook">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
-        <path d="M12 2C6.477 2 2 6.235 2 11.5c0 2.919 1.317 5.527 3.392 7.284V22l3.088-1.696A10.6 10.6 0 0 0 12 20.5c5.523 0 10-4.235 10-9.5S17.523 2 12 2zm1.008 12.787-2.551-2.72-4.979 2.72 5.479-5.817 2.613 2.72 4.917-2.72-5.479 5.817z"/>
-    </svg>
-</a>
+<div id="fb-root"></div>
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "711719745365052");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({ xfbml: true, version: 'v18.0' });
+    };
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+    
 
 
 <script src="script.js"></script>
 <script>lucide.createIcons();</script>
 </body>
 </html>
+
 
 
 
