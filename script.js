@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// ── NAVBAR SCROLL EFFECT ──────────────────────
+
 function initNavScroll() {
     const navbar = document.getElementById("navbar");
     if (!navbar) return;
@@ -18,7 +18,7 @@ function initNavScroll() {
 }
 
 
-// ── ACTIVE NAV LINK ON SCROLL ─────────────────
+
 function initActiveNav() {
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-link");
@@ -41,7 +41,7 @@ function initActiveNav() {
 }
 
 
-// ── DROPDOWN MENU ─────────────────────────────
+
 function initDropdownMenu() {
     const menuToggle = document.getElementById("menu-toggle");
     const dropdownMenu = document.getElementById("dropdown-menu");
@@ -60,7 +60,7 @@ function initDropdownMenu() {
 }
 
 
-// ── PLAN CARD SELECTION ───────────────────────
+
 function initPricingSelection() {
     const planCards = document.querySelectorAll(".plan-card");
     const selectedText = document.getElementById("selected-plan-text");
@@ -76,7 +76,7 @@ function initPricingSelection() {
                 selectedText.textContent = `✓ ${planName} plan selected — scroll down to book`;
             }
             if (planSelect) planSelect.value = planName;
-            // Smooth scroll to booking
+            
             setTimeout(() => {
                 document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
             }, 300);
@@ -85,7 +85,7 @@ function initPricingSelection() {
 }
 
 
-// ── SELECT PLAN (from button) ─────────────────
+
 function selectPlan(planName) {
     const planCards = document.querySelectorAll(".plan-card");
     planCards.forEach(p => {
@@ -98,7 +98,7 @@ function selectPlan(planName) {
 }
 
 
-// ── BOOKING FORM ──────────────────────────────
+
 function initForm() {
     const form = document.getElementById("booking-form");
     if (!form) return;
@@ -147,7 +147,7 @@ function initForm() {
 }
 
 
-// ── AUTH ──────────────────────────────────────
+
 function initAuth() {
     const loginBtn    = document.getElementById("login-btn");
     const logoutBtn   = document.getElementById("logout-btn");
@@ -183,7 +183,7 @@ function initAuth() {
 }
 
 
-// ── HELPERS ───────────────────────────────────
+
 function showMessage(text, type) {
     const msg = document.getElementById("form-message");
     if (!msg) return;

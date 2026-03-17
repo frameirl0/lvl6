@@ -1,7 +1,4 @@
-/* ============================================
-   LEGAL PAGES — Privacy · Terms · Refund
-   Shared stylesheet, imports style.css first
-   ============================================ */
+
 
 
 .legal-main {
@@ -18,7 +15,7 @@
 }
 
 
-/* ─── BACK LINK ── */
+
 .back-link {
     display: inline-flex;
     align-items: center;
@@ -36,7 +33,7 @@
 .back-link i { width: 14px; height: 14px; }
 
 
-/* ─── LEGAL HEADER ── */
+
 .legal-header {
     text-align: center;
     margin-bottom: 40px;
@@ -74,7 +71,7 @@
 }
 
 
-/* ─── LEGAL BODY CARD ── */
+
 .legal-body {
     padding: 44px 48px;
     margin-bottom: 24px;
@@ -94,7 +91,7 @@
 }
 
 
-/* ─── LEGAL SECTIONS ── */
+
 .legal-section {
     margin-bottom: 40px;
     padding-bottom: 40px;
@@ -177,7 +174,7 @@
 }
 
 
-/* ─── CONTACT CALLOUT ── */
+
 .legal-contact {
     display: flex;
     align-items: flex-start;
@@ -217,7 +214,7 @@
 .legal-contact a:hover { color: var(--white); }
 
 
-/* ─── BOTTOM NAV ── */
+
 .legal-nav-links {
     display: flex;
     gap: 12px;
@@ -249,14 +246,14 @@
 .legal-nav-btn i { width: 15px; height: 15px; }
 
 
-/* ─── ACTIVE DROPDOWN LINK ── */
+
 .active-legal {
     color: var(--white) !important;
     background: rgba(214,40,40,0.08) !important;
 }
 
 
-/* ─── RESPONSIVE ── */
+
 @media (max-width: 768px) {
     .legal-body { padding: 28px 24px; }
     .legal-header h1 { font-size: 42px; }
