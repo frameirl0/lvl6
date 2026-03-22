@@ -277,6 +277,19 @@ a { text-decoration: none; }
     padding: 120px 24px 80px;
     position: relative;
     z-index: 1;
+    background:
+        linear-gradient(180deg, rgba(12,12,14,0.60) 0%, rgba(12,12,14,0.80) 50%, var(--black) 100%),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070")
+        center/cover no-repeat;
+    overflow: hidden;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, var(--black));
+    pointer-events: none;
 }
 .hero-content {
     max-width: 1120px;
