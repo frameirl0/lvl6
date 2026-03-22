@@ -23,13 +23,18 @@
             <img src="logo.png" alt="Level Six Fitness Gym">
         </a>
         <div class="nav-links" id="nav-links">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#programs" class="nav-link">Programs</a>
-            <a href="#membership" class="nav-link">Membership</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <a href="about.html" class="nav-link">About Us</a>
+            <a href="#home" class="nav-link active"><i data-lucide="home"></i><span>Home</span></a>
+            <a href="#programs" class="nav-link"><i data-lucide="dumbbell"></i><span>Programs</span></a>
+            <a href="#membership" class="nav-link"><i data-lucide="credit-card"></i><span>Membership</span></a>
+            <a href="#contact" class="nav-link"><i data-lucide="map-pin"></i><span>Contact</span></a>
+            <a href="about.html" class="nav-link"><i data-lucide="users"></i><span>About Us</span></a>
         </div>
-        <a href="#membership" class="nav-cta">Join Now</a>
+        <div class="nav-right">
+            <button class="nav-login-btn" id="login-trigger" aria-label="Login">
+                <i data-lucide="user-circle"></i>
+            </button>
+            <a href="#membership" class="nav-cta"><i data-lucide="zap"></i> Join Now</a>
+        </div>
         <button class="hamburger" id="hamburger" aria-label="Open menu">
             <span></span><span></span><span></span>
         </button>
@@ -316,7 +321,184 @@
     </div>
 </section>
 
-<section class="section testimonials-section">
+<section class="section tutorial-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Step-by-Step Guide</span>
+            <h2>See How <span class="red-text">Booking Works</span></h2>
+            <p>Watch how easy it is to book your slot and complete your membership payment — done in minutes.</p>
+        </div>
+        <div class="tutorial-wrap glass-card">
+            <div class="tutorial-player" id="tutorial-player">
+                <div class="tutorial-screen" id="tutorial-screen">
+                    <div class="tut-step active" id="tut-step-1">
+                        <div class="tut-browser">
+                            <div class="tut-browser-bar">
+                                <span class="tut-dot red"></span>
+                                <span class="tut-dot yellow"></span>
+                                <span class="tut-dot green"></span>
+                                <div class="tut-url"><i data-lucide="lock"></i> lvlsixgym.com/#membership</div>
+                            </div>
+                            <div class="tut-browser-body">
+                                <div class="tut-mock-header">
+                                    <div class="tut-mock-logo"></div>
+                                    <div class="tut-mock-nav">
+                                        <span></span><span></span><span></span><span class="active-nav"></span>
+                                    </div>
+                                </div>
+                                <div class="tut-plans-row">
+                                    <div class="tut-plan">
+                                        <span class="tut-plan-label">Basic</span>
+                                        <span class="tut-plan-price">₱1,200</span>
+                                    </div>
+                                    <div class="tut-plan tut-plan-highlight">
+                                        <span class="tut-badge-mini">Popular</span>
+                                        <span class="tut-plan-label">Standard</span>
+                                        <span class="tut-plan-price">₱1,800</span>
+                                        <div class="tut-click-anim" id="click-anim-1"></div>
+                                    </div>
+                                    <div class="tut-plan">
+                                        <span class="tut-plan-label">Premium</span>
+                                        <span class="tut-plan-price">₱3,000</span>
+                                    </div>
+                                </div>
+                                <p class="tut-caption"><i data-lucide="mouse-pointer-click"></i> Click on your preferred membership plan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tut-step" id="tut-step-2">
+                        <div class="tut-browser">
+                            <div class="tut-browser-bar">
+                                <span class="tut-dot red"></span>
+                                <span class="tut-dot yellow"></span>
+                                <span class="tut-dot green"></span>
+                                <div class="tut-url"><i data-lucide="lock"></i> lvlsixgym.com/#contact</div>
+                            </div>
+                            <div class="tut-browser-body">
+                                <p class="tut-form-title">Book Your Slot</p>
+                                <div class="tut-form-fields">
+                                    <div class="tut-field">
+                                        <span class="tut-field-label">Full Name</span>
+                                        <div class="tut-field-input typing" data-text="Juan dela Cruz"></div>
+                                    </div>
+                                    <div class="tut-field">
+                                        <span class="tut-field-label">Email</span>
+                                        <div class="tut-field-input typing2" data-text="juan@gmail.com"></div>
+                                    </div>
+                                    <div class="tut-field">
+                                        <span class="tut-field-label">Plan</span>
+                                        <div class="tut-field-select">Standard — ₱1,800/month <i data-lucide="chevron-down"></i></div>
+                                    </div>
+                                </div>
+                                <p class="tut-caption"><i data-lucide="edit-3"></i> Fill in your details on the booking form</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tut-step" id="tut-step-3">
+                        <div class="tut-browser">
+                            <div class="tut-browser-bar">
+                                <span class="tut-dot red"></span>
+                                <span class="tut-dot yellow"></span>
+                                <span class="tut-dot green"></span>
+                                <div class="tut-url"><i data-lucide="lock"></i> lvlsixgym.com/payment</div>
+                            </div>
+                            <div class="tut-browser-body">
+                                <p class="tut-form-title">Secure Payment</p>
+                                <div class="tut-payment-methods">
+                                    <div class="tut-pay-method active-pay"><i data-lucide="smartphone"></i> GCash</div>
+                                    <div class="tut-pay-method"><i data-lucide="credit-card"></i> Maya</div>
+                                    <div class="tut-pay-method"><i data-lucide="banknote"></i> Cash</div>
+                                </div>
+                                <div class="tut-payment-form">
+                                    <div class="tut-field">
+                                        <span class="tut-field-label">GCash Number</span>
+                                        <div class="tut-field-input">09XX XXX XXXX</div>
+                                    </div>
+                                    <div class="tut-amount-row">
+                                        <span>Standard Plan</span>
+                                        <strong>₱1,800.00</strong>
+                                    </div>
+                                </div>
+                                <p class="tut-caption"><i data-lucide="shield-check"></i> Choose your payment method and enter details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tut-step" id="tut-step-4">
+                        <div class="tut-browser">
+                            <div class="tut-browser-bar">
+                                <span class="tut-dot red"></span>
+                                <span class="tut-dot yellow"></span>
+                                <span class="tut-dot green"></span>
+                                <div class="tut-url"><i data-lucide="lock"></i> lvlsixgym.com/confirmed</div>
+                            </div>
+                            <div class="tut-browser-body tut-success-body">
+                                <div class="tut-success-icon"><i data-lucide="check-circle"></i></div>
+                                <h3 class="tut-success-title">Booking Confirmed!</h3>
+                                <p class="tut-success-msg">Your slot has been reserved. We will contact you within 24 hours to finalize your schedule.</p>
+                                <div class="tut-receipt">
+                                    <div class="tut-receipt-row"><span>Member</span><strong>Juan dela Cruz</strong></div>
+                                    <div class="tut-receipt-row"><span>Plan</span><strong>Standard</strong></div>
+                                    <div class="tut-receipt-row"><span>Amount Paid</span><strong class="red-text">₱1,800.00</strong></div>
+                                    <div class="tut-receipt-row"><span>Status</span><strong style="color:#4ade80">✓ Confirmed</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tut-controls">
+                    <button class="tut-btn" id="tut-prev" onclick="tutPrev()" disabled>
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="tut-dots">
+                        <span class="tut-dot-nav active" onclick="tutGo(0)"></span>
+                        <span class="tut-dot-nav" onclick="tutGo(1)"></span>
+                        <span class="tut-dot-nav" onclick="tutGo(2)"></span>
+                        <span class="tut-dot-nav" onclick="tutGo(3)"></span>
+                    </div>
+                    <button class="tut-btn" id="tut-next" onclick="tutNext()">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tutorial-steps-sidebar">
+                <p class="tut-sidebar-label">Process Overview</p>
+                <div class="tut-sidebar-step active" onclick="tutGo(0)">
+                    <div class="tut-sidebar-num">01</div>
+                    <div>
+                        <strong>Pick Your Plan</strong>
+                        <span>Choose Basic, Standard, or Premium</span>
+                    </div>
+                </div>
+                <div class="tut-sidebar-step" onclick="tutGo(1)">
+                    <div class="tut-sidebar-num">02</div>
+                    <div>
+                        <strong>Fill the Booking Form</strong>
+                        <span>Enter your name, email, and schedule</span>
+                    </div>
+                </div>
+                <div class="tut-sidebar-step" onclick="tutGo(2)">
+                    <div class="tut-sidebar-num">03</div>
+                    <div>
+                        <strong>Complete Payment</strong>
+                        <span>Pay via GCash, Maya, or Cash</span>
+                    </div>
+                </div>
+                <div class="tut-sidebar-step" onclick="tutGo(3)">
+                    <div class="tut-sidebar-num">04</div>
+                    <div>
+                        <strong>You're Confirmed!</strong>
+                        <span>Get your receipt and start training</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn-primary" style="margin-top:24px;justify-content:center;">
+                    <i data-lucide="calendar-check"></i> Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Member Stories</span>
@@ -523,6 +705,47 @@
         </div>
     </div>
 </section>
+
+<div class="modal-overlay" id="login-overlay">
+    <div class="modal-box glass-card" id="login-modal">
+        <button class="modal-close" id="modal-close" aria-label="Close">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="modal-logo">
+            <img src="logo.png" alt="Level Six">
+        </div>
+        <h2 class="modal-title">Member <span class="red-text">Login</span></h2>
+        <p class="modal-sub">Welcome back. Enter your credentials to continue.</p>
+        <form id="login-form" class="login-form">
+            <div class="form-group">
+                <label for="login-user">Username or Email</label>
+                <div class="input-wrap">
+                    <i data-lucide="user"></i>
+                    <input type="text" id="login-user" placeholder="Enter your username" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="login-pass">Password</label>
+                <div class="input-wrap">
+                    <i data-lucide="lock"></i>
+                    <input type="password" id="login-pass" placeholder="Enter your password" required>
+                </div>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">
+                <i data-lucide="log-in"></i> Log In
+            </button>
+            <p class="login-hint">Don't have an account? <a href="#membership">Join Now</a></p>
+        </form>
+        <div class="login-success" id="login-success">
+            <div class="success-icon"><i data-lucide="check-circle"></i></div>
+            <h3>Welcome back!</h3>
+            <p>You are now logged in to your LVL VI member account.</p>
+            <button class="btn-primary" onclick="closeLogin()" style="margin-top:20px;width:100%;justify-content:center;">
+                <i data-lucide="arrow-right"></i> Continue to Dashboard
+            </button>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="footer-inner container">
