@@ -5,9 +5,8 @@
     <title>Level Six Fitness Gym — Legazpi City</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="blog.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -20,231 +19,185 @@
 
 <header id="navbar">
     <nav class="top-nav glass-nav">
-        <div class="logo">
-            <img src="logo.png" alt="Level Six Logo">
+        <a href="#home" class="logo">
+            <img src="logo.png" alt="Level Six Fitness Gym">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#programs" class="nav-link">Programs</a>
+            <a href="#membership" class="nav-link">Membership</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="about.html" class="nav-link">About Us</a>
         </div>
-        <div class="nav-center">
-            <a href="#home" class="nav-link active">
-                <i data-lucide="home"></i><span>Home</span>
-            </a>
-            <a href="#services" class="nav-link">
-                <i data-lucide="layers"></i><span>Services</span>
-            </a>
-            <a href="#membership" class="nav-link">
-                <i data-lucide="credit-card"></i><span>Plans</span>
-            </a>
-            <a href="#faq" class="nav-link">
-                <i data-lucide="help-circle"></i><span>FAQ</span>
-            </a>
-            <a href="#contact" class="nav-link">
-                <i data-lucide="calendar"></i><span>Book</span>
-            </a>
-        </div>
-        <div class="nav-menu">
-            <button id="menu-toggle" aria-label="Menu">
-                <i data-lucide="menu"></i>
-            </button>
-            <div class="dropdown" id="dropdown-menu">
-                <div class="dropdown-header">
-                    <span class="dropdown-brand">LVL VI</span>
-                </div>
-                <a href="#services"><i data-lucide="dumbbell"></i> Services</a>
-                <a href="#membership"><i data-lucide="star"></i> Membership</a>
-                <a href="#contact"><i data-lucide="map-pin"></i> Find Us</a>
-                <a href="about.html"><i data-lucide="users"></i> About Us</a>
-                <a href="#blog"><i data-lucide="book-open"></i> Blog</a>
-                <div class="dropdown-divider"></div>
-                <a href="privacy.html"><i data-lucide="shield"></i> Privacy Policy</a>
-                <a href="terms.html"><i data-lucide="file-text"></i> Terms of Use</a>
-                <a href="refund.html"><i data-lucide="refresh-cw"></i> Refund Policy</a>
-            </div>
-        </div>
+        <a href="#membership" class="nav-cta">Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 </header>
 
+<div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">
+        <i data-lucide="x"></i>
+    </button>
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#programs" class="mobile-link">Programs</a>
+    <a href="#membership" class="mobile-link">Membership</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="about.html" class="mobile-link">About Us</a>
+    <a href="#membership" class="mobile-cta">Join Now</a>
+</div>
+
 <section id="home" class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
-        <div class="hero-chip glass-chip">
-            <i data-lucide="map-pin"></i>
-            <span>EM's Barrio, Legazpi City, Albay</span>
-        </div>
-        <h1 class="hero-title">
-            TRAIN<br>
-            <span class="red-text">WITH PURPOSE.</span><br>
-            SEE RESULTS.
-        </h1>
-        <p class="hero-sub">
-            A performance-driven system built on structure, discipline, and real measurable progress.
-        </p>
+        <p class="hero-location"><i data-lucide="map-pin"></i> EM's Barrio, Legazpi City, Albay</p>
+        <h1>TRAIN<br><span class="red-text">WITH PURPOSE.</span><br>SEE RESULTS.</h1>
+        <p class="hero-sub">A performance-driven gym built on structure, discipline, and real measurable progress.</p>
         <div class="hero-actions">
-            <a href="#membership" class="btn-primary">
-                Start Training <i data-lucide="arrow-right"></i>
-            </a>
-            <a href="#services" class="btn-ghost">
-                Explore Services
-            </a>
+            <a href="#membership" class="btn-primary">View Plans <i data-lucide="arrow-right"></i></a>
+            <a href="#programs" class="btn-ghost">Our Programs</a>
         </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <strong>6S</strong>
+                <span>Framework</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <strong>3</strong>
+                <span>Plans Available</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <strong>100%</strong>
+                <span>No Lock-in</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <i data-lucide="chevron-down"></i>
     </div>
 </section>
 
-<section id="services" class="section">
+<section id="programs" class="section">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">What We Offer</span>
-            <h2 class="section-title">Training <span class="red-text">Systems</span></h2>
-            <p class="section-sub">Everything you need to train with intent and achieve real results.</p>
+            <span class="section-tag">Programs</span>
+            <h2>What We <span class="red-text">Offer</span></h2>
+            <p>Everything you need to train with intent and achieve real results.</p>
         </div>
-
-        <div class="services-grid">
-
-            <div class="service-card glass-card">
-                <div class="service-icon-wrap">
-                    <i data-lucide="dumbbell"></i>
-                </div>
-                <div class="service-body">
-                    <h3>Gym Floor Access</h3>
-                    <p class="service-desc">Full access to our equipment floor, barbells, squat racks, cable machines, dumbbells (5–50kg), cardio stations, and stretching area.</p>
-                    <ul class="service-details">
-                        <li><i data-lucide="check"></i> Free weights &amp; barbell racks</li>
-                        <li><i data-lucide="check"></i> Plate-loaded machines</li>
-                        <li><i data-lucide="check"></i> Cable &amp; pulley systems</li>
-                        <li><i data-lucide="check"></i> Treadmill, bike &amp; rower</li>
-                    </ul>
-                    <span class="service-tag">All Plans</span>
-                </div>
+        <div class="programs-grid">
+            <div class="program-card glass-card">
+                <div class="program-icon"><i data-lucide="dumbbell"></i></div>
+                <h3>Gym Floor Access</h3>
+                <p>Full access to barbells, squat racks, cable machines, dumbbells (5–50kg), cardio stations, and stretching area.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> Free weights &amp; barbell racks</li>
+                    <li><i data-lucide="check"></i> Plate-loaded machines</li>
+                    <li><i data-lucide="check"></i> Cable &amp; pulley systems</li>
+                    <li><i data-lucide="check"></i> Treadmill, bike &amp; rower</li>
+                </ul>
+                <span class="badge">All Plans</span>
             </div>
-
-            <div class="service-card glass-card">
-                <div class="service-icon-wrap">
-                    <i data-lucide="clipboard-list"></i>
-                </div>
-                <div class="service-body">
-                    <h3>Fitness Assessment</h3>
-                    <p class="service-desc">A one-on-one baseline evaluation with a coach to measure where you're starting and set realistic, trackable goals.</p>
-                    <ul class="service-details">
-                        <li><i data-lucide="check"></i> BMI &amp; body fat estimate</li>
-                        <li><i data-lucide="check"></i> Full mobility screening</li>
-                        <li><i data-lucide="check"></i> Strength baseline testing</li>
-                        <li><i data-lucide="check"></i> Cardio capacity check</li>
-                    </ul>
-                    <span class="service-tag">Standard &amp; Premium</span>
-                </div>
+            <div class="program-card glass-card">
+                <div class="program-icon"><i data-lucide="user-check"></i></div>
+                <h3>Personal Training</h3>
+                <p>1-on-1 coaching built around your goals — fat loss, muscle gain, athletic performance, or injury recovery.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> 2 sessions/month included</li>
+                    <li><i data-lucide="check"></i> Custom workout programming</li>
+                    <li><i data-lucide="check"></i> Form &amp; technique correction</li>
+                    <li><i data-lucide="check"></i> Goal reassessment every 4 weeks</li>
+                </ul>
+                <span class="badge badge-red">Premium Only</span>
             </div>
-
-            <div class="service-card glass-card">
-                <div class="service-icon-wrap">
-                    <i data-lucide="user-check"></i>
-                </div>
-                <div class="service-body">
-                    <h3>Personal Training</h3>
-                    <p class="service-desc">Dedicated 1-on-1 coaching built around your specific goals like fat loss, muscle gain, athletic performance, or injury recovery.</p>
-                    <ul class="service-details">
-                        <li><i data-lucide="check"></i> 2 sessions/month included</li>
-                        <li><i data-lucide="check"></i> Custom workout programming</li>
-                        <li><i data-lucide="check"></i> Form &amp; technique correction</li>
-                        <li><i data-lucide="check"></i> Goal reassessment every 4 weeks</li>
-                    </ul>
-                    <span class="service-tag">Premium Only</span>
-                </div>
+            <div class="program-card glass-card">
+                <div class="program-icon"><i data-lucide="clipboard-list"></i></div>
+                <h3>Fitness Assessment</h3>
+                <p>A one-on-one baseline evaluation with a coach to measure where you're starting and set realistic goals.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> BMI &amp; body fat estimate</li>
+                    <li><i data-lucide="check"></i> Full mobility screening</li>
+                    <li><i data-lucide="check"></i> Strength baseline testing</li>
+                    <li><i data-lucide="check"></i> Cardio capacity check</li>
+                </ul>
+                <span class="badge">Standard &amp; Premium</span>
             </div>
-
-            <div class="service-card glass-card">
-                <div class="service-icon-wrap">
-                    <i data-lucide="salad"></i>
-                </div>
-                <div class="service-body">
-                    <h3>Nutrition Guide</h3>
-                    <p class="service-desc">A personalized nutrition plan built around your goals, schedule, and food preferences. Designed to complement your training.</p>
-                    <ul class="service-details">
-                        <li><i data-lucide="check"></i> Daily calorie &amp; macro targets</li>
-                        <li><i data-lucide="check"></i> Pre &amp; post-workout meal timing</li>
-                        <li><i data-lucide="check"></i> Filipino-friendly food options</li>
-                        <li><i data-lucide="check"></i> Hydration &amp; supplement tips</li>
-                    </ul>
-                    <span class="service-tag">Premium Only</span>
-                </div>
+            <div class="program-card glass-card">
+                <div class="program-icon"><i data-lucide="salad"></i></div>
+                <h3>Nutrition Guide</h3>
+                <p>A personalized nutrition plan built around your goals, schedule, and food preferences.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> Daily calorie &amp; macro targets</li>
+                    <li><i data-lucide="check"></i> Pre &amp; post-workout meal timing</li>
+                    <li><i data-lucide="check"></i> Filipino-friendly food options</li>
+                    <li><i data-lucide="check"></i> Hydration &amp; supplement tips</li>
+                </ul>
+                <span class="badge badge-red">Premium Only</span>
             </div>
-
-            <div class="service-card glass-card">
-                <div class="service-icon-wrap">
-                    <i data-lucide="lock"></i>
-                </div>
-                <div class="service-body">
-                    <h3>Locker &amp; Shower</h3>
-                    <p class="service-desc">Clean, secure facilities so you can go straight from training to your next commitment.</p>
-                    <ul class="service-details">
-                        <li><i data-lucide="check"></i> Dedicated assigned locker slot</li>
-                        <li><i data-lucide="check"></i> Private shower cubicles</li>
-                        <li><i data-lucide="check"></i> 24-hour lock-in option</li>
-                        <li><i data-lucide="check"></i> Towels available on request</li>
-                    </ul>
-                    <span class="service-tag">Standard &amp; Premium</span>
-                </div>
+            <div class="program-card glass-card">
+                <div class="program-icon"><i data-lucide="trending-up"></i></div>
+                <h3>Progress Tracking</h3>
+                <p>Monthly check-ins that measure what's working and adjust your plan to keep you moving forward.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> Monthly coach check-in</li>
+                    <li><i data-lucide="check"></i> Real-time program adjustments</li>
+                    <li><i data-lucide="check"></i> Body measurement &amp; photo log</li>
+                    <li><i data-lucide="check"></i> Written progress report</li>
+                </ul>
+                <span class="badge badge-red">Premium Only</span>
             </div>
-
-            <div class="service-card glass-card">
-                <div class="service-icon-wrap">
-                    <i data-lucide="trending-up"></i>
-                </div>
-                <div class="service-body">
-                    <h3>Progress Tracking</h3>
-                    <p class="service-desc">Stay accountable with monthly check-ins that measure what's working, what's not, and what to adjust next.</p>
-                    <ul class="service-details">
-                        <li><i data-lucide="check"></i> Monthly coach check-in session</li>
-                        <li><i data-lucide="check"></i> Real-time program adjustments</li>
-                        <li><i data-lucide="check"></i> Body measurement &amp; photo log</li>
-                        <li><i data-lucide="check"></i> Written progress report</li>
-                    </ul>
-                    <span class="service-tag">Premium Only</span>
-                </div>
+            <div class="program-card glass-card">
+                <div class="program-icon"><i data-lucide="lock"></i></div>
+                <h3>Locker &amp; Shower</h3>
+                <p>Clean, secure facilities so you can go straight from training to your next commitment.</p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> Dedicated assigned locker slot</li>
+                    <li><i data-lucide="check"></i> Private shower cubicles</li>
+                    <li><i data-lucide="check"></i> 24-hour lock-in option</li>
+                    <li><i data-lucide="check"></i> Towels available on request</li>
+                </ul>
+                <span class="badge">Standard &amp; Premium</span>
             </div>
-
         </div>
     </div>
 </section>
 
-<section id="pillars" class="section pillars-section">
+<section class="section framework-section">
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Our System</span>
-            <h2 class="section-title">The LVL VI <span class="red-text">6S Framework</span></h2>
-            <p class="section-sub">Every result we produce is built on principles that do not change.</p>
+            <h2>The LVL VI <span class="red-text">6S Framework</span></h2>
+            <p>Every result we produce is built on six principles that do not change.</p>
         </div>
-        <div class="pillars-grid">
-            <div class="pillar-card glass-card">
-                <div class="pillar-num">01</div>
-                <div class="pillar-icon"><i data-lucide="layout"></i></div>
+        <div class="framework-grid">
+            <div class="fw-card glass-card">
+                <span class="fw-num">01</span>
                 <h3>Structure</h3>
                 <p>Progressive, periodized programming that removes guesswork and delivers measurable growth every month.</p>
             </div>
-            <div class="pillar-card glass-card">
-                <div class="pillar-num">02</div>
-                <div class="pillar-icon"><i data-lucide="dumbbell"></i></div>
+            <div class="fw-card glass-card">
+                <span class="fw-num">02</span>
                 <h3>Strength</h3>
-                <p>Resistance training focused on building real, functional capability not just aesthetics.</p>
+                <p>Resistance training focused on building real, functional capability — not just aesthetics.</p>
             </div>
-            <div class="pillar-card glass-card">
-                <div class="pillar-num">03</div>
-                <div class="pillar-icon"><i data-lucide="target"></i></div>
+            <div class="fw-card glass-card">
+                <span class="fw-num">03</span>
                 <h3>Strategy</h3>
                 <p>Goal-aligned programming that respects your lifestyle, schedule, and long-term health.</p>
             </div>
-            <div class="pillar-card glass-card">
-                <div class="pillar-num">04</div>
-                <div class="pillar-icon"><i data-lucide="leaf"></i></div>
+            <div class="fw-card glass-card">
+                <span class="fw-num">04</span>
                 <h3>Sustainability</h3>
-                <p>Habits built for years, not weeks. No crash diets, no burnout programs just consistent progress.</p>
+                <p>Habits built for years, not weeks. No crash diets, no burnout — just consistent progress.</p>
             </div>
-            <div class="pillar-card glass-card">
-                <div class="pillar-num">05</div>
-                <div class="pillar-icon"><i data-lucide="users"></i></div>
+            <div class="fw-card glass-card">
+                <span class="fw-num">05</span>
                 <h3>Support</h3>
                 <p>A community and coaching team that holds you accountable and celebrates every milestone.</p>
             </div>
-            <div class="pillar-card glass-card">
-                <div class="pillar-num">06</div>
-                <div class="pillar-icon"><i data-lucide="shield-check"></i></div>
+            <div class="fw-card glass-card">
+                <span class="fw-num">06</span>
                 <h3>Self-Discipline</h3>
                 <p>We develop the mindset infrastructure that keeps you moving even when motivation fades.</p>
             </div>
@@ -252,241 +205,127 @@
     </div>
 </section>
 
+
 <section id="membership" class="section membership-section">
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Membership</span>
-            <h2 class="section-title">Choose Your <span class="red-text">Level</span></h2>
-            <p class="section-sub">No lock-in contracts. Train consistently. Upgrade anytime.</p>
+            <h2>Choose Your <span class="red-text">Plan</span></h2>
+            <p>No lock-in contracts. Train consistently. Upgrade anytime.</p>
         </div>
-
         <div class="plans-grid">
-
-            <div class="plan-card plan-basic" data-plan="Basic">
-                <div class="plan-tier">Starter</div>
-                <h3 class="plan-name">Basic</h3>
+            <div class="plan-card glass-card" data-plan="Basic">
+                <div class="plan-header">
+                    <span class="plan-tier">Starter</span>
+                    <h3>Basic</h3>
+                </div>
                 <div class="plan-price">
-                    <span class="currency">₱</span>1,200
-                    <span class="period">/month</span>
+                    <span class="currency">₱</span><span class="amount">1,200</span><span class="period">/month</span>
                 </div>
                 <div class="plan-divider"></div>
                 <ul class="plan-features">
-                    <li><i data-lucide="check-circle"></i> Gym floor access (off-peak hours)</li>
-                    <li><i data-lucide="check-circle"></i> Standard equipment use</li>
-                    <li><i data-lucide="check-circle"></i> Free weights & cardio area</li>
-                    <li class="muted"><i data-lucide="x-circle"></i> Fitness assessment</li>
-                    <li class="muted"><i data-lucide="x-circle"></i> Locker & shower</li>
-                    <li class="muted"><i data-lucide="x-circle"></i> Personal training</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Gym floor access (off-peak)</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Standard equipment use</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Free weights &amp; cardio area</li>
+                    <li class="excluded"><i data-lucide="x-circle"></i> Fitness assessment</li>
+                    <li class="excluded"><i data-lucide="x-circle"></i> Locker &amp; shower</li>
+                    <li class="excluded"><i data-lucide="x-circle"></i> Personal training</li>
                 </ul>
-                <button class="plan-btn" onclick="selectPlan('Basic')">Choose Basic</button>
+                <button class="plan-btn" onclick="choosePlan('Basic')">Get Started</button>
             </div>
-
-            <div class="plan-card plan-standard" data-plan="Standard">
-                <div class="plan-tier">Essential</div>
-                <h3 class="plan-name">Standard</h3>
+            <div class="plan-card glass-card plan-featured" data-plan="Standard">
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-header">
+                    <span class="plan-tier">Essential</span>
+                    <h3>Standard</h3>
+                </div>
                 <div class="plan-price">
-                    <span class="currency">₱</span>1,800
-                    <span class="period">/month</span>
+                    <span class="currency">₱</span><span class="amount">1,800</span><span class="period">/month</span>
                 </div>
                 <div class="plan-divider"></div>
                 <ul class="plan-features">
-                    <li><i data-lucide="check-circle"></i> Unlimited gym access (all hours)</li>
-                    <li><i data-lucide="check-circle"></i> All equipment use</li>
-                    <li><i data-lucide="check-circle"></i> Locker & shower facility</li>
-                    <li><i data-lucide="check-circle"></i> Initial fitness assessment</li>
-                    <li><i data-lucide="check-circle"></i> Monthly progress check-in</li>
-                    <li class="muted"><i data-lucide="x-circle"></i> Personal training sessions</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Unlimited gym access (all hours)</li>
+                    <li class="included"><i data-lucide="check-circle"></i> All equipment use</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Locker &amp; shower facility</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Initial fitness assessment</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Monthly progress check-in</li>
+                    <li class="excluded"><i data-lucide="x-circle"></i> Personal training sessions</li>
                 </ul>
-                <button class="plan-btn" onclick="selectPlan('Standard')">Choose Standard</button>
+                <button class="plan-btn" onclick="choosePlan('Standard')">Get Started</button>
             </div>
-
-            <div class="plan-card plan-premium" data-plan="Premium">
-                <div class="plan-tier">Elite</div>
-                <h3 class="plan-name">Premium</h3>
+            <div class="plan-card glass-card" data-plan="Premium">
+                <div class="plan-header">
+                    <span class="plan-tier">Elite</span>
+                    <h3>Premium</h3>
+                </div>
                 <div class="plan-price">
-                    <span class="currency">₱</span>3,000
-                    <span class="period">/month</span>
+                    <span class="currency">₱</span><span class="amount">3,000</span><span class="period">/month</span>
                 </div>
                 <div class="plan-divider"></div>
                 <ul class="plan-features">
-                    <li><i data-lucide="check-circle"></i> Unlimited access (priority)</li>
-                    <li><i data-lucide="check-circle"></i> All Standard inclusions</li>
-                    <li><i data-lucide="check-circle"></i> 2 PT sessions/month (1-on-1)</li>
-                    <li><i data-lucide="check-circle"></i> Personalized nutrition guide</li>
-                    <li><i data-lucide="check-circle"></i> Monthly photo & measurement log</li>
-                    <li><i data-lucide="check-circle"></i> Program adjustments anytime</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Unlimited priority access</li>
+                    <li class="included"><i data-lucide="check-circle"></i> All Standard inclusions</li>
+                    <li class="included"><i data-lucide="check-circle"></i> 2 personal training sessions/month</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Personalized nutrition guide</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Monthly photo &amp; measurement log</li>
+                    <li class="included"><i data-lucide="check-circle"></i> Program adjustments anytime</li>
                 </ul>
-                <button class="plan-btn" onclick="selectPlan('Premium')">Choose Premium</button>
+                <button class="plan-btn" onclick="choosePlan('Premium')">Get Started</button>
             </div>
-
         </div>
-        <p id="selected-plan-text" class="selected-text"></p>
+        <p class="plan-note">Not sure which plan is right for you? <a href="#contact">Talk to a coach →</a></p>
     </div>
 </section>
 
-<section id="contact" class="section contact-section">
+<section class="section steps-section">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Start Training</span>
-            <h2 class="section-title">Book Your <span class="red-text">Slot</span></h2>
-            <p class="section-sub">Submit your details and we will contact you within 24 hours.</p>
-        </div>
-
-        <div class="contact-grid">
-
-            
-            <div class="contact-info">
-                <div class="info-block glass-card">
-                    <h3 class="info-title">Visit Our Gym</h3>
-                    <div class="info-items">
-                        <div class="info-item">
-                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
-                            <div>
-                                <strong>Address</strong>
-                                <span>EM's Barrio, Legazpi City, Albay 4500</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i data-lucide="clock"></i></div>
-                            <div>
-                                <strong>Operating Hours</strong>
-                                <span>Monday – Saturday: 7:00 AM – 10:00 PM</span>
-                                <span>Sunday: 8:00 AM – 6:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i data-lucide="phone"></i></div>
-                            <div>
-                                <strong>Contact</strong>
-                                <span>+63 900 000 0000</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon"><i data-lucide="message-circle"></i></div>
-                            <div>
-                                <strong>Facebook</strong>
-                                <span>Message us directly via the chat widget below ↘</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-wrapper glass-card">
-                    <div class="map-label"><i data-lucide="navigation"></i> Our Location</div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1234567890!2d123.7356!3d13.1391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1ef3c4e2a6b1d%3A0x0!2sLegazpi+City%2C+Albay!5e0!3m2!1sen!2sph!4v1234567890"
-                        width="100%" height="240"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-
-            
-            <div class="form-col">
-                <div class="glass-card form-card">
-                    <form id="booking-form">
-                        <div class="form-group">
-                            <label>Full Name</label>
-                            <div class="input-wrap">
-                                <i data-lucide="user"></i>
-                                <input type="text" id="name" placeholder="Juan dela Cruz">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Email Address</label>
-                            <div class="input-wrap">
-                                <i data-lucide="mail"></i>
-                                <input type="email" id="email" placeholder="you@gmail.com">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Phone Number</label>
-                            <div class="input-wrap">
-                                <i data-lucide="phone"></i>
-                                <input type="tel" id="phone" placeholder="09XX XXX XXXX">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Membership Plan</label>
-                            <div class="input-wrap select-wrap">
-                                <i data-lucide="credit-card"></i>
-                                <select id="plan">
-                                    <option value="">Select a plan...</option>
-                                    <option value="Basic">Basic — ₱1,200/month</option>
-                                    <option value="Standard">Standard — ₱1,800/month</option>
-                                    <option value="Premium">Premium — ₱3,000/month</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Preferred Start Date</label>
-                            <div class="input-wrap">
-                                <i data-lucide="calendar"></i>
-                                <input type="date" id="start-date">
-                            </div>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <i data-lucide="send"></i>
-                            Submit Booking Request
-                        </button>
-                    </form>
-                    <p id="form-message"></p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="how-it-works" class="section howitworks-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Simple Process</span>
-            <h2 class="section-title">How It <span class="red-text">Works</span></h2>
-            <p class="section-sub">Getting started at Level Six is easy. Here's your path from inquiry to training.</p>
+            <span class="section-tag">How It Works</span>
+            <h2>Getting Started Is <span class="red-text">Easy</span></h2>
+            <p>Four simple steps from inquiry to your first training session.</p>
         </div>
         <div class="steps-grid">
             <div class="step-card glass-card">
                 <div class="step-num">01</div>
-                <div class="step-icon"><i data-lucide="mouse-pointer-click"></i></div>
-                <h3>Choose a Plan</h3>
-                <p>Browse our Basic, Standard, or Premium plans and pick what fits your goals and budget.</p>
+                <i data-lucide="mouse-pointer-click" class="step-icon"></i>
+                <h3>Pick a Plan</h3>
+                <p>Browse Basic, Standard, or Premium and choose what fits your goals and budget.</p>
             </div>
             <div class="step-arrow"><i data-lucide="arrow-right"></i></div>
             <div class="step-card glass-card">
                 <div class="step-num">02</div>
-                <div class="step-icon"><i data-lucide="calendar-check"></i></div>
+                <i data-lucide="calendar-check" class="step-icon"></i>
                 <h3>Book Your Slot</h3>
-                <p>Fill out our booking form with your details and preferred start date. We'll confirm within 24 hours.</p>
+                <p>Fill out the form below with your name and preferred start date. We confirm within 24 hours.</p>
             </div>
             <div class="step-arrow"><i data-lucide="arrow-right"></i></div>
             <div class="step-card glass-card">
                 <div class="step-num">03</div>
-                <div class="step-icon"><i data-lucide="clipboard-list"></i></div>
+                <i data-lucide="clipboard-list" class="step-icon"></i>
                 <h3>Get Assessed</h3>
-                <p>On your first visit, our coach conducts a fitness baseline assessment to personalize your program.</p>
+                <p>On your first visit, a coach runs a fitness baseline to personalize your program.</p>
             </div>
             <div class="step-arrow"><i data-lucide="arrow-right"></i></div>
             <div class="step-card glass-card">
                 <div class="step-num">04</div>
-                <div class="step-icon"><i data-lucide="dumbbell"></i></div>
+                <i data-lucide="dumbbell" class="step-icon"></i>
                 <h3>Start Training</h3>
-                <p>Follow your personalized program, attend classes, and track your progress every month.</p>
+                <p>Follow your personalized program and track your progress every month.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="testimonials" class="section testimonials-section">
+<section class="section testimonials-section">
     <div class="container">
         <div class="section-header">
             <span class="section-tag">Member Stories</span>
-            <h2 class="section-title">What Members <span class="red-text">Say</span></h2>
-            <p class="section-sub">Real results from real people who trusted the process.</p>
+            <h2>What Members <span class="red-text">Say</span></h2>
+            <p>Real results from real people who trusted the process.</p>
         </div>
         <div class="testimonials-grid">
             <div class="testimonial-card glass-card">
-                <div class="testimonial-stars">★★★★★</div>
+                <div class="stars">★★★★★</div>
                 <p>"I've been a member for 3 months and I've already lost 8kg. The structured program and monthly check-ins kept me accountable. Best gym in Legazpi!"</p>
                 <div class="testimonial-author">
                     <img src="https://ui-avatars.com/api/?name=Marco+Santos&background=2a2a2e&color=d62828&size=48&bold=true" alt="Marco Santos">
@@ -497,8 +336,8 @@
                 </div>
             </div>
             <div class="testimonial-card glass-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p>"The group classes are my favorite part. Coach explains every move clearly and the energy in the room is amazing. I never skip a session!"</p>
+                <div class="stars">★★★★★</div>
+                <p>"The coaches explain every move clearly and the energy in the gym is amazing. I never skip a session! Totally worth every peso."</p>
                 <div class="testimonial-author">
                     <img src="https://ui-avatars.com/api/?name=Andrea+Cruz&background=2a2a2e&color=d62828&size=48&bold=true" alt="Andrea Cruz">
                     <div>
@@ -508,8 +347,8 @@
                 </div>
             </div>
             <div class="testimonial-card glass-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p>"The nutrition guide they gave me changed how I eat. Combined with training, I feel stronger and more energized than I ever have. Highly recommend!"</p>
+                <div class="stars">★★★★★</div>
+                <p>"The nutrition guide changed how I eat. Combined with training, I feel stronger and more energized than I ever have. Highly recommend!"</p>
                 <div class="testimonial-author">
                     <img src="https://ui-avatars.com/api/?name=Paolo+Rivera&background=2a2a2e&color=d62828&size=48&bold=true" alt="Paolo Rivera">
                     <div>
@@ -522,229 +361,163 @@
     </div>
 </section>
 
-<section id="blog" class="section">
+<section id="contact" class="section contact-section">
     <div class="container">
         <div class="section-header">
-            <span class="section-tag">Insights</span>
-            <h2 class="section-title">Training <span class="red-text">Knowledge</span></h2>
-            <p class="section-sub">Learn how to train with structure and intent.</p>
+            <span class="section-tag">Contact &amp; Booking</span>
+            <h2>Let's <span class="red-text">Connect</span></h2>
+            <p>Book your slot, ask questions, or just come visit us.</p>
         </div>
-
-        <div class="blog-grid">
-
-            <div class="blog-card glass-card">
-                <div class="blog-card-cover">
-                    <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#0c0c0e"/>
-                                <stop offset="100%" style="stop-color:#1a0808"/>
-                            </linearGradient>
-                            <radialGradient id="glow1" cx="70%" cy="40%" r="55%">
-                                <stop offset="0%" style="stop-color:#d62828;stop-opacity:0.35"/>
-                                <stop offset="100%" style="stop-color:#d62828;stop-opacity:0"/>
-                            </radialGradient>
-                        </defs>
-                        <rect width="400" height="180" fill="url(#bg1)"/>
-                        <rect width="400" height="180" fill="url(#glow1)"/>
-                        
-                        <line x1="0" y1="45" x2="400" y2="45" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-                        <line x1="0" y1="90" x2="400" y2="90" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-                        <line x1="0" y1="135" x2="400" y2="135" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-                        <line x1="100" y1="0" x2="100" y2="180" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-                        <line x1="200" y1="0" x2="200" y2="180" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-                        <line x1="300" y1="0" x2="300" y2="180" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-                        
-                        <rect x="155" y="82" width="90" height="16" rx="3" fill="rgba(214,40,40,0.15)" stroke="rgba(214,40,40,0.4)" stroke-width="1"/>
-                        <rect x="143" y="72" width="20" height="36" rx="5" fill="rgba(214,40,40,0.2)" stroke="rgba(214,40,40,0.5)" stroke-width="1"/>
-                        <rect x="237" y="72" width="20" height="36" rx="5" fill="rgba(214,40,40,0.2)" stroke="rgba(214,40,40,0.5)" stroke-width="1"/>
-                        <rect x="133" y="78" width="14" height="24" rx="3" fill="rgba(214,40,40,0.3)" stroke="rgba(214,40,40,0.6)" stroke-width="1"/>
-                        <rect x="253" y="78" width="14" height="24" rx="3" fill="rgba(214,40,40,0.3)" stroke="rgba(214,40,40,0.6)" stroke-width="1"/>
-                        
-                        <rect x="0" y="174" width="400" height="6" fill="rgba(214,40,40,0.5)"/>
-                    </svg>
-                    <span class="blog-card-cover-label">Mindset</span>
+        <div class="contact-grid">
+            <div class="contact-left">
+                <div class="glass-card about-block">
+                    <h3>About Level Six</h3>
+                    <p>We started with one goal: give Legazpi City a gym that treats fitness like a discipline, not a trend. No gimmicks, no shortcuts — just a well-equipped space, committed coaches, and a framework designed to move people forward.</p>
+                    <p style="margin-top:12px;">Every program is built on our <strong style="color:var(--red)">6S Framework</strong>: Structure, Strength, Strategy, Sustainability, Support, and Self-Discipline.</p>
                 </div>
-                <div class="blog-card-body">
-                    <span class="blog-card-meta">5 min read &nbsp;·&nbsp; Training</span>
-                    <h3>Why Most People Don't See Results</h3>
-                    <p>Most people fail not because they lack effort, but because they lack structure. Here's what's actually holding you back.</p>
-                    <a href="blog-results.html" class="blog-card-link">Read Article <i data-lucide="arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="blog-card glass-card">
-                <div class="blog-card-cover">
-                    <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#0c0c0e"/>
-                                <stop offset="100%" style="stop-color:#0a0c14"/>
-                            </linearGradient>
-                            <radialGradient id="glow2" cx="30%" cy="60%" r="55%">
-                                <stop offset="0%" style="stop-color:#d62828;stop-opacity:0.3"/>
-                                <stop offset="100%" style="stop-color:#d62828;stop-opacity:0"/>
-                            </radialGradient>
-                        </defs>
-                        <rect width="400" height="180" fill="url(#bg2)"/>
-                        <rect width="400" height="180" fill="url(#glow2)"/>
-                        
-                        <polygon points="80,55 100,44 120,55 120,77 100,88 80,77" fill="rgba(214,40,40,0.12)" stroke="rgba(214,40,40,0.4)" stroke-width="1.2"/>
-                        <polygon points="130,55 150,44 170,55 170,77 150,88 130,77" fill="rgba(214,40,40,0.1)" stroke="rgba(214,40,40,0.3)" stroke-width="1.2"/>
-                        <polygon points="180,55 200,44 220,55 220,77 200,88 180,77" fill="rgba(214,40,40,0.18)" stroke="rgba(214,40,40,0.5)" stroke-width="1.2"/>
-                        <polygon points="80,105 100,94 120,105 120,127 100,138 80,127" fill="rgba(214,40,40,0.1)" stroke="rgba(214,40,40,0.3)" stroke-width="1.2"/>
-                        <polygon points="130,105 150,94 170,105 170,127 150,138 130,127" fill="rgba(214,40,40,0.18)" stroke="rgba(214,40,40,0.5)" stroke-width="1.2"/>
-                        <polygon points="180,105 200,94 220,105 220,127 200,138 180,127" fill="rgba(214,40,40,0.12)" stroke="rgba(214,40,40,0.4)" stroke-width="1.2"/>
-                        
-                        <text x="300" y="105" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="rgba(214,40,40,0.12)" letter-spacing="4">VI</text>
-                        <rect x="0" y="174" width="400" height="6" fill="rgba(214,40,40,0.5)"/>
-                    </svg>
-                    <span class="blog-card-cover-label">Framework</span>
-                </div>
-                <div class="blog-card-body">
-                    <span class="blog-card-meta">7 min read &nbsp;·&nbsp; Philosophy</span>
-                    <h3>The 6S Framework Explained</h3>
-                    <p>Six principles that define every program we build and every result we produce. This is the operating system behind LVL VI.</p>
-                    <a href="blog-6s.html" class="blog-card-link">Read Article <i data-lucide="arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="blog-card glass-card">
-                <div class="blog-card-cover">
-                    <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#0c0c0e"/>
-                                <stop offset="100%" style="stop-color:#0d0c0a"/>
-                            </linearGradient>
-                            <radialGradient id="glow3" cx="60%" cy="35%" r="50%">
-                                <stop offset="0%" style="stop-color:#d62828;stop-opacity:0.28"/>
-                                <stop offset="100%" style="stop-color:#d62828;stop-opacity:0"/>
-                            </radialGradient>
-                        </defs>
-                        <rect width="400" height="180" fill="url(#bg3)"/>
-                        <rect width="400" height="180" fill="url(#glow3)"/>
-                        
-                        <rect x="80" y="60" width="240" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
-                        <rect x="80" y="60" width="80" height="8" rx="4" fill="rgba(214,40,40,0.7)"/>
-                        <rect x="80" y="82" width="240" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
-                        <rect x="80" y="82" width="160" height="8" rx="4" fill="rgba(214,40,40,0.5)"/>
-                        <rect x="80" y="104" width="240" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
-                        <rect x="80" y="104" width="220" height="8" rx="4" fill="rgba(214,40,40,0.4)"/>
-                        
-                        <line x1="168" y1="52" x2="180" y2="64" stroke="rgba(214,40,40,0.6)" stroke-width="2"/>
-                        <line x1="180" y1="52" x2="168" y2="64" stroke="rgba(214,40,40,0.6)" stroke-width="2"/>
-                        <rect x="0" y="174" width="400" height="6" fill="rgba(214,40,40,0.5)"/>
-                    </svg>
-                    <span class="blog-card-cover-label">Beginners</span>
-                </div>
-                <div class="blog-card-body">
-                    <span class="blog-card-meta">6 min read &nbsp;·&nbsp; Beginner Guide</span>
-                    <h3>Beginner Mistakes in the Gym</h3>
-                    <p>Common habits that slow progress and how to avoid them from day one. If you're new, read this before your first session.</p>
-                    <a href="blog-beginners.html" class="blog-card-link">Read Article <i data-lucide="arrow-right"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="newsletter" class="section newsletter-section">
-    <div class="container">
-        <div class="newsletter-wrap glass-card">
-            <div class="newsletter-left">
-                <span class="section-tag">Stay in the Loop</span>
-                <h2>Get <span class="red-text">Fitness Tips</span> & Updates</h2>
-                <p>Subscribe to our newsletter for workout tips, nutrition advice, gym news, and exclusive member promos delivered straight to your inbox.</p>
-                <ul class="newsletter-perks">
-                    <li><i data-lucide="check-circle"></i> Weekly workout tips</li>
-                    <li><i data-lucide="check-circle"></i> Nutrition & lifestyle guides</li>
-                    <li><i data-lucide="check-circle"></i> Member-exclusive promos</li>
-                    <li><i data-lucide="check-circle"></i> Gym news & updates</li>
-                </ul>
-            </div>
-            <div class="newsletter-right">
-                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-                    <div class="newsletter-field">
-                        <label>Full Name</label>
-                        <input type="text" id="nl-name" placeholder="Juan dela Cruz" required>
+                <div class="glass-card info-block">
+                    <h3>Find Us</h3>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <strong>Address</strong>
+                                <span>EM's Barrio, Legazpi City, Albay 4500</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="clock"></i></div>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Mon–Sat: 7:00 AM – 10:00 PM</span>
+                                <span>Sunday: 8:00 AM – 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+63 900 000 0000</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i data-lucide="facebook"></i></div>
+                            <div>
+                                <strong>Facebook</strong>
+                                <a href="https://www.facebook.com/LVL6FG" target="_blank" style="color:var(--red)">facebook.com/LVL6FG</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="newsletter-field">
-                        <label>Email Address</label>
-                        <input type="email" id="nl-email" placeholder="you@gmail.com" required>
+                </div>
+                <div class="glass-card map-block">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1234567890!2d123.7356!3d13.1391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1ef3c4e2a6b1d%3A0x0!2sLegazpi+City%2C+Albay!5e0!3m2!1sen!2sph!4v1234567890"
+                        width="100%" height="220"
+                        style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="glass-card booking-card">
+                    <h3>Book Your Free Visit</h3>
+                    <p class="booking-sub">Fill in your details and we'll reach out within 24 hours to confirm your slot.</p>
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <div class="input-wrap">
+                                <i data-lucide="user"></i>
+                                <input type="text" id="name" placeholder="Juan dela Cruz" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrap">
+                                <i data-lucide="mail"></i>
+                                <input type="email" id="email" placeholder="you@gmail.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrap">
+                                <i data-lucide="phone"></i>
+                                <input type="tel" id="phone" placeholder="09XX XXX XXXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="plan">Membership Plan</label>
+                            <div class="input-wrap select-wrap">
+                                <i data-lucide="credit-card"></i>
+                                <select id="plan">
+                                    <option value="">Choose a plan...</option>
+                                    <option value="Basic">Basic — ₱1,200/month</option>
+                                    <option value="Standard">Standard — ₱1,800/month</option>
+                                    <option value="Premium">Premium — ₱3,000/month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-date">Preferred Start Date</label>
+                            <div class="input-wrap">
+                                <i data-lucide="calendar"></i>
+                                <input type="date" id="start-date">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary submit-btn">
+                            <i data-lucide="send"></i> Submit Booking
+                        </button>
+                    </form>
+                    <p id="form-message"></p>
+                </div>
+                <div class="glass-card faq-block">
+                    <h3>Common Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-q" onclick="toggleFaq(this)">
+                                <span>What are your operating hours?</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="faq-a">
+                                <p>Monday to Saturday: 7:00 AM – 10:00 PM. Sunday: 8:00 AM – 6:00 PM. Premium members have priority access during peak hours.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-q" onclick="toggleFaq(this)">
+                                <span>Can I try the gym before committing?</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="faq-a">
+                                <p>Yes! We offer a one-time free trial visit so you can explore the gym and meet our coaches before signing up.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-q" onclick="toggleFaq(this)">
+                                <span>What is the minimum age to join?</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="faq-a">
+                                <p>Members must be at least 15 years old. Ages 15–17 require written consent from a parent or guardian.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-q" onclick="toggleFaq(this)">
+                                <span>Can I upgrade or change my plan?</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="faq-a">
+                                <p>Absolutely. You can upgrade or downgrade at the start of your next billing cycle. Just inform our staff at least 5 days before renewal.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-q" onclick="toggleFaq(this)">
+                                <span>What payment methods do you accept?</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="faq-a">
+                                <p>We accept cash, GCash, and Maya at the gym. Online bookings are confirmed in person on your first visit.</p>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn-primary" style="width:100%; justify-content:center; margin-top:8px;">
-                        Subscribe Now <i data-lucide="mail"></i>
-                    </button>
-                    <p class="newsletter-note">No spam, ever. Unsubscribe anytime.</p>
-                    <p id="newsletter-msg" style="display:none; color: var(--red); font-size:13px; margin-top:8px; text-align:center;"></p>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="faq" class="section faq-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Got Questions?</span>
-            <h2 class="section-title">Frequently Asked <span class="red-text">Questions</span></h2>
-            <p class="section-sub">Everything you need to know before joining Level Six.</p>
-        </div>
-        <div class="faq-list">
-            <div class="faq-item glass-card">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    <span>What are your operating hours?</span>
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>We are open Monday to Saturday, 7:00 AM – 10:00 PM, and Sunday, 8:00 AM – 6:00 PM. Premium members have priority access during peak hours.</p>
-                </div>
-            </div>
-            <div class="faq-item glass-card">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    <span>Can I try the gym before committing to a plan?</span>
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Yes! We offer a one-time free trial visit. You can explore the gym floor, meet our coaches, and decide which plan fits you best before signing up.</p>
-                </div>
-            </div>
-            <div class="faq-item glass-card">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    <span>What is the minimum age to join?</span>
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Members must be at least 15 years old. Members aged 15–17 require written consent from a parent or guardian before enrollment.</p>
-                </div>
-            </div>
-            <div class="faq-item glass-card">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    <span>Can I upgrade or downgrade my plan later?</span>
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Absolutely. You can upgrade or downgrade your membership plan at the start of your next billing cycle. Just inform our staff at least 5 days before renewal.</p>
-                </div>
-            </div>
-            <div class="faq-item glass-card">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    <span>Are personal training sessions transferable?</span>
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>PT sessions included in Premium plans are non-transferable and must be used within the billing month. Sessions cancelled with less than 12 hours notice will be forfeited.</p>
-                </div>
-            </div>
-            <div class="faq-item glass-card">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    <span>What payment methods do you accept?</span>
-                    <i data-lucide="chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>We accept cash, GCash, and Maya at the gym. Online bookings via the website are confirmed in person upon your first visit.</p>
                 </div>
             </div>
         </div>
@@ -752,23 +525,25 @@
 </section>
 
 <footer>
-    <div class="footer-glass">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <img src="logo.png" alt="LVL Six" class="footer-logo">
-                <p>Built on discipline. Designed for results.<br>Legazpi City, Albay.</p>
+    <div class="footer-inner container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Level Six Fitness Gym" class="footer-logo">
+                <p>Built on discipline.<br>Designed for results.<br>Legazpi City, Albay 🇵🇭</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/LVL6FG" target="_blank" class="social-btn" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
             </div>
-            <div class="footer-links-group">
+            <div class="footer-links">
                 <div class="footer-col">
                     <span class="footer-col-title">Navigate</span>
                     <a href="#home">Home</a>
+                    <a href="#programs">Programs</a>
+                    <a href="#membership">Membership</a>
+                    <a href="#contact">Contact</a>
                     <a href="about.html">About Us</a>
-                    <a href="#services">Services</a>
-                    <a href="#membership">Plans</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contact">Book</a>
                 </div>
                 <div class="footer-col">
                     <span class="footer-col-title">Legal</span>
@@ -777,34 +552,15 @@
                     <a href="refund.html">Refund Policy</a>
                 </div>
                 <div class="footer-col">
-                    <span class="footer-col-title">Contact</span>
-                    <a href="#">Facebook Page</a>
+                    <span class="footer-col-title">Reach Us</span>
                     <a href="tel:+639000000000">+63 900 000 0000</a>
                     <a href="mailto:lvlsixgym@gmail.com">lvlsixgym@gmail.com</a>
-                
-                <div class="footer-social">
-    <a href="https://www.facebook.com/LVL6FG" target="_blank" class="social-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-        </svg>
-    </a>
-    <span class="social-btn social-disabled" title="Coming Soon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path fill="#0c0c0e" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-        </svg>
-    </span>
-    <span class="social-btn social-disabled" title="Coming Soon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
-        </svg>
-    </span>
-                </div>
+                    <a href="https://www.facebook.com/LVL6FG" target="_blank">facebook.com/LVL6FG</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <span>© 2026 Level Six Fitness Gym. All rights reserved.</span>
-            <span class="footer-tag">Legazpi City, Albay 🇵🇭</span>
         </div>
     </div>
 </footer>
@@ -812,23 +568,6 @@
 <script src="script.js"></script>
 <script>
 lucide.createIcons();
-
-function toggleFaq(btn) {
-    const item = btn.closest('.faq-item');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-}
-
-function handleNewsletter(e) {
-    e.preventDefault();
-    const name = document.getElementById('nl-name').value;
-    const msg = document.getElementById('newsletter-msg');
-    msg.style.display = 'block';
-    msg.style.color = '#4ade80';
-    msg.textContent = `🎉 Thanks ${name}! You're subscribed to LVL VI updates.`;
-    e.target.reset();
-}
 </script>
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -840,8 +579,6 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>    
-
+</script>
 </body>
 </html>
-
