@@ -23,34 +23,26 @@
         <a href="index.html" class="logo">
             <img src="logo.png" alt="Level Six Fitness Gym">
         </a>
-        <div class="nav-links" id="nav-links">
-            <a href="index.html#home" class="nav-link"><i data-lucide="home"></i><span>Home</span></a>
-            <a href="index.html#programs" class="nav-link"><i data-lucide="dumbbell"></i><span>Programs</span></a>
-            <a href="index.html#membership" class="nav-link"><i data-lucide="credit-card"></i><span>Membership</span></a>
-            <a href="index.html#contact" class="nav-link"><i data-lucide="map-pin"></i><span>Contact</span></a>
-            <a href="about.html" class="nav-link"><i data-lucide="users"></i><span>About Us</span></a>
+        <div class="nav-links">
+            <a href="index.html#home" class="nav-link">Home</a>
+            <a href="index.html#programs" class="nav-link">Programs</a>
+            <a href="index.html#trainers" class="nav-link">Trainers</a>
+            <a href="index.html#membership" class="nav-link">Membership</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
         </div>
-        <div class="nav-right">
-            <button class="nav-login-btn" id="login-trigger" aria-label="Login">
-                <i data-lucide="user-circle"></i>
-            </button>
-            <a href="index.html#membership" class="nav-cta">Join Now</a>
-        </div>
+        <a href="index.html#membership" class="nav-cta">Join Now</a>
         <button class="hamburger" id="hamburger" aria-label="Open menu">
             <span></span><span></span><span></span>
         </button>
     </nav>
 </header>
-
 <div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-close" id="mobile-close" aria-label="Close menu">
-        <i data-lucide="x"></i>
-    </button>
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu"><i data-lucide="x"></i></button>
     <a href="index.html#home" class="mobile-link">Home</a>
     <a href="index.html#programs" class="mobile-link">Programs</a>
+    <a href="index.html#trainers" class="mobile-link">Trainers</a>
     <a href="index.html#membership" class="mobile-link">Membership</a>
     <a href="index.html#contact" class="mobile-link">Contact</a>
-    <a href="about.html" class="mobile-link">About Us</a>
     <a href="index.html#membership" class="mobile-cta">Join Now</a>
 </div>
 
@@ -178,48 +170,6 @@
     </div>
 </main>
 
-
-<div class="modal-overlay" id="login-overlay">
-    <div class="modal-box glass-card" id="login-modal">
-        <button class="modal-close" id="modal-close" aria-label="Close">
-            <i data-lucide="x"></i>
-        </button>
-        <div class="modal-logo">
-            <img src="logo.png" alt="Level Six">
-        </div>
-        <h2 class="modal-title">Member <span class="red-text">Login</span></h2>
-        <p class="modal-sub">Welcome back. Enter your credentials to continue.</p>
-        <form id="login-form" class="login-form">
-            <div class="form-group">
-                <label for="login-user">Username or Email</label>
-                <div class="input-wrap">
-                    <i data-lucide="user"></i>
-                    <input type="text" id="login-user" placeholder="Enter your username" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="login-pass">Password</label>
-                <div class="input-wrap">
-                    <i data-lucide="lock"></i>
-                    <input type="password" id="login-pass" placeholder="Enter your password" required>
-                </div>
-            </div>
-            <button type="submit" class="btn-primary submit-btn">
-                <i data-lucide="log-in"></i> Log In
-            </button>
-            <p class="login-hint">Don't have an account? <a href="index.html#membership">Join Now</a></p>
-        </form>
-        <div class="login-success" id="login-success">
-            <div class="success-icon"><i data-lucide="check-circle"></i></div>
-            <h3>Welcome back!</h3>
-            <p>You are now logged in to your LVL VI member account.</p>
-            <button class="btn-primary" onclick="closeLogin()" style="margin-top:20px;width:100%;justify-content:center;">
-                <i data-lucide="arrow-right"></i> Continue to Dashboard
-            </button>
-        </div>
-    </div>
-</div>
-
 <footer>
     <div class="footer-glass">
         <div class="footer-bottom" style="border-top:none; padding: 24px 48px;">
@@ -231,7 +181,5 @@
 
 <script src="script.js"></script>
 <script>lucide.createIcons();</script>
-
-
 </body>
 </html>
