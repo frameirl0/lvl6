@@ -1,0 +1,22 @@
+ <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                            <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0c0c0e"/>
+                                <stop offset="100%" style="stop-color:#0a0c14"/>
+                            </linearGradient>
+                            <radialGradient id="glow2" cx="30%" cy="60%" r="55%">
+                                <stop offset="0%" style="stop-color:#d62828;stop-opacity:0.3"/>
+                                <stop offset="100%" style="stop-color:#d62828;stop-opacity:0"/>
+                            </radialGradient>
+                        </defs>
+                        <rect width="400" height="180" fill="url(#bg2)"/>
+                        <rect width="400" height="180" fill="url(#glow2)"/>
+                        <polygon points="80,55 100,44 120,55 120,77 100,88 80,77" fill="rgba(214,40,40,0.12)" stroke="rgba(214,40,40,0.4)" stroke-width="1.2"/>
+                        <polygon points="130,55 150,44 170,55 170,77 150,88 130,77" fill="rgba(214,40,40,0.1)" stroke="rgba(214,40,40,0.3)" stroke-width="1.2"/>
+                        <polygon points="180,55 200,44 220,55 220,77 200,88 180,77" fill="rgba(214,40,40,0.18)" stroke="rgba(214,40,40,0.5)" stroke-width="1.2"/>
+                        <polygon points="80,105 100,94 120,105 120,127 100,138 80,127" fill="rgba(214,40,40,0.1)" stroke="rgba(214,40,40,0.3)" stroke-width="1.2"/>
+                        <polygon points="130,105 150,94 170,105 170,127 150,138 130,127" fill="rgba(214,40,40,0.18)" stroke="rgba(214,40,40,0.5)" stroke-width="1.2"/>
+                        <polygon points="180,105 200,94 220,105 220,127 200,138 180,127" fill="rgba(214,40,40,0.12)" stroke="rgba(214,40,40,0.4)" stroke-width="1.2"/>
+                        <text x="300" y="105" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="rgba(214,40,40,0.12)" letter-spacing="4">VI</text>
+                        <rect x="0" y="174" width="400" height="6" fill="rgba(214,40,40,0.5)"/>
+                    </svg>
