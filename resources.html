@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Level Six Fitness Gym — Legazpi City</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+</div>
+
+<header id="navbar">
+    <nav class="top-nav glass-nav">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Level Six Fitness Gym">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link active"><i data-lucide="home"></i><span>Home</span></a>
+            <a href="program.html" class="nav-link"><i data-lucide="dumbbell"></i><span>Programs</span></a>
+            <a href="membership.html" class="nav-link"><i data-lucide="credit-card"></i><span>Membership</span></a>
+            <a href="contact.html" class="nav-link"><i data-lucide="map-pin"></i><span>Contact</span></a>
+            <a href="about.html" class="nav-link"><i data-lucide="users"></i><span>About Us</span></a>
+            <a href="resources.html" class="nav-link"><i data-lucide="download"></i><span>Resources</span></a>
+            <a href="blog.html" class="nav-link"><i data-lucide="book-open"></i><span>Blog</span></a>
+
+        </div>
+        <div class="nav-right">
+            <button class="nav-login-btn" id="login-trigger" aria-label="Login">
+                <i data-lucide="user-circle"></i>
+            </button>
+            <a href="membership.html" class="nav-cta">Join Now</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">
+        <i data-lucide="x"></i>
+    </button>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="program.html" class="mobile-link">Programs</a>
+    <a href="membership.html" class="mobile-link">Membership</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="about.html" class="mobile-link">About Us</a>
+    <a href="membership.html" class="mobile-cta">Join Now</a>
+</div>
+
+
+<section id="downloads" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Free Resources</span>
+            <h2>Downloads & <span class="red-text">Guides</span></h2>
+            <p>Free educational resources to help you train smarter and eat better.</p>
+        </div>
+        <div class="downloads-grid">
+
+            <div class="download-card glass-card">
+                <div class="download-icon-wrap">
+                    <i data-lucide="layout"></i>
+                </div>
+                <div class="download-body">
+                    <span class="download-tag">Framework</span>
+                    <h3>The 6S Framework Guide</h3>
+                    <p>The six principles behind every program at LVL VI. Structure, Strength, Strategy, Sustainability, Support, Self-Discipline.</p>
+                    <div class="download-meta">
+                        <span><i data-lucide="file-text"></i> PDF &nbsp;·&nbsp; 3 pages</span>
+                        <span><i data-lucide="zap"></i> Free</span>
+                    </div>
+                </div>
+                <a href="6S_Framework_Guide.pdf" download class="download-btn">
+                    <i data-lucide="download"></i> Download
+                </a>
+            </div>
+
+            <div class="download-card glass-card">
+                <div class="download-icon-wrap">
+                    <i data-lucide="user-check"></i>
+                </div>
+                <div class="download-body">
+                    <span class="download-tag">Beginner</span>
+                    <h3>Beginner's Guide to the Gym</h3>
+                    <p>Common mistakes to avoid, your first-month training plan, and gym etiquette, everything you need before day one.</p>
+                    <div class="download-meta">
+                        <span><i data-lucide="file-text"></i> PDF &nbsp;·&nbsp; 3 pages</span>
+                        <span><i data-lucide="zap"></i> Free</span>
+                    </div>
+                </div>
+                <a href="Beginners_Guide_to_the_Gym.pdf" download class="download-btn">
+                    <i data-lucide="download"></i> Download
+                </a>
+            </div>
+
+            <div class="download-card glass-card">
+                <div class="download-icon-wrap">
+                    <i data-lucide="home"></i>
+                </div>
+                <div class="download-body">
+                    <span class="download-tag">Workout</span>
+                    <h3>Home Workout Plan</h3>
+                    <p>A complete 4-week, no-equipment training program you can do anywhere. Push, pull, and legs covered, with a progression guide.</p>
+                    <div class="download-meta">
+                        <span><i data-lucide="file-text"></i> PDF &nbsp;·&nbsp; 4 pages</span>
+                        <span><i data-lucide="zap"></i> Free</span>
+                    </div>
+                </div>
+                <a href="Home_Workout_Plan.pdf" download class="download-btn">
+                    <i data-lucide="download"></i> Download
+                </a>
+            </div>
+
+            <div class="download-card glass-card">
+                <div class="download-icon-wrap">
+                    <i data-lucide="salad"></i>
+                </div>
+                <div class="download-body">
+                    <span class="download-tag">Nutrition</span>
+                    <h3>Nutrition & Meal Planning Guide</h3>
+                    <p>Macros explained, calorie targets by goal, and a Filipino-friendly sample meal plan, practical nutrition made simple.</p>
+                    <div class="download-meta">
+                        <span><i data-lucide="file-text"></i> PDF &nbsp;·&nbsp; 3 pages</span>
+                        <span><i data-lucide="zap"></i> Free</span>
+                    </div>
+                </div>
+                <a href="Nutrition_and_Meal_Planning_Guide.pdf" download class="download-btn">
+                    <i data-lucide="download"></i> Download
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<div class="modal-overlay" id="login-overlay">
+    <div class="modal-box glass-card" id="login-modal">
+        <button class="modal-close" id="modal-close" aria-label="Close">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="modal-logo">
+            <img src="logo.png" alt="Level Six">
+        </div>
+        <h2 class="modal-title">Member <span class="red-text">Login</span></h2>
+        <p class="modal-sub">Welcome back. Enter your credentials to continue.</p>
+        <form id="login-form" class="login-form">
+            <div class="form-group">
+                <label for="login-user">Username or Email</label>
+                <div class="input-wrap">
+                    <i data-lucide="user"></i>
+                    <input type="text" id="login-user" placeholder="Enter your username" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="login-pass">Password</label>
+                <div class="input-wrap">
+                    <i data-lucide="lock"></i>
+                    <input type="password" id="login-pass" placeholder="Enter your password" required>
+                </div>
+            </div>
+            <button type="submit" class="btn-primary submit-btn">
+                <i data-lucide="log-in"></i> Log In
+            </button>
+            <p class="login-hint">Don't have an account? <a href="#membership">Join Now</a></p>
+        </form>
+        <div class="login-success" id="login-success">
+            <div class="success-icon"><i data-lucide="check-circle"></i></div>
+            <h3>Welcome back!</h3>
+            <p>You are now logged in to your LVL VI member account.</p>
+            <button class="btn-primary" onclick="closeLogin()" style="margin-top:20px;width:100%;justify-content:center;">
+                <i data-lucide="arrow-right"></i> Continue to Dashboard
+            </button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-inner container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Level Six Fitness Gym" class="footer-logo">
+                <p>Built on discipline.<br>Designed for results.<br>Legazpi City, Albay 🇵🇭</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/LVL6FG" target="_blank" class="social-btn" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://lvl6fitnessgym.blogspot.com/" target="_blank" class="social-btn" aria-label="Blog">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm14 4h-5v5h5V8z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <span class="footer-col-title">Navigate</span>
+                    <a href="#home">Home</a>
+                    <a href="#programs">Programs</a>
+                    <a href="#membership">Membership</a>
+                    <a href="#contact">Contact</a>
+                    <a href="about.html">About Us</a>
+                    <a href="https://lvl6fitnessgym.blogspot.com/" target="_blank">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Legal</span>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+                <div class="footer-col">
+                    <span class="footer-col-title">Reach Us</span>
+                    <a href="tel:+639000000000">+63 900 000 0000</a>
+                    <a href="/cdn-cgi/l/email-protection#a2ced4ced1cbdac5dbcfe2c5cfc3cbce8cc1cdcf"><span class="__cf_email__" data-cfemail="214d574d52485946584c61464c40484d0f424e4c">[email&#160;protected]</span></a>
+                    <a href="https://www.facebook.com/LVL6FG" target="_blank">facebook.com/LVL6FG</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Level Six Fitness Gym. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+<script>
+lucide.createIcons();
+</script>
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69b94b3f5005201c341f2e2c/1jjtsrsb3';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+</body>
+</html>
